@@ -1,17 +1,17 @@
 #!/bin/bash
 
-SERVER_IP="172.28.0.204"				# IP of Samba server
-SHARE_NAME="Backups/webmora/mysql"			# Share folder
-USR_NAME="user"				                # Samba user
-USR_PASSWORD="Pa$$w0rd"				        # Samba password
-DOMAIN="contoso.local"					# Domain
-MOUNT_POINT="/mnt/backup"				# Path where mount. Must exist
-MYSQL_USER="root"					# Mysql user to backup Databases
-MYSQL_PASS="Pa$$w0rd"   				# Mysql pass
-MAX_AGE="8"						# Days to keep backups
-LOGFILE="/var/log/mysql-backup.log"		  	# Log 
-EMAIL="jgranados@mail.com"	            		# Email to send log
-DATE=`date +%d-%m-%y_%H-%M`				# Date format to append to the file backup
+SERVER_IP="172.28.0.204"		# IP of Samba server
+SHARE_NAME="Backups/webmora/mysql"	# Share folder
+USR_NAME="user"				# Samba user
+USR_PASSWORD="Pa$$w0rd"			# Samba password
+DOMAIN="contoso.local"			# Domain
+MOUNT_POINT="/mnt/backup"		# Path where mount. Must exist
+MYSQL_USER="root"			# Mysql user to backup Databases
+MYSQL_PASS="Pa$$w0rd"			# Mysql pass
+MAX_AGE="8"				# Days to keep backups
+LOGFILE="/var/log/mysql-backup.log"	# Log 
+EMAIL="jgranados@mail.com"		# Email to send log
+DATE=`date +%d-%m-%y_%H-%M`		# Date format to append to the file backup
 
 
 GZIP="$(which gzip)"
