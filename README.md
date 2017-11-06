@@ -1,4 +1,4 @@
 MySQL
 =====
 
-MySQL Scripts
+Script to save a gzip mysql dump into a Windows Server samba share.
